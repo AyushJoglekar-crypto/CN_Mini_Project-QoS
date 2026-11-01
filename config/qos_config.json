@@ -1,0 +1,27 @@
+{
+  "controller_ip": "127.0.0.1",
+  "control_port": 9999,
+  "link_capacity_mbps": 10.0,
+  "monitoring_interval_sec": 2.0,
+  "clear_polls_threshold": 3,
+  "classes": {
+    "voice": {
+      "port": 5001,
+      "dscp": 46,
+      "queue_id": 2,
+      "target_rate_kbps": 512
+    },
+    "video": {
+      "port": 5002,
+      "dscp": 34,
+      "queue_id": 1,
+      "target_rate_kbps": 4000
+    },
+    "bulk": {
+      "port": 5003,
+      "dscp": 0,
+      "queue_id": 0,
+      "target_rate_kbps": 9000
+    }
+  }
+}
